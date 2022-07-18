@@ -24,6 +24,7 @@ namespace MockTechTask.Query
             var result = from person in personList
                          where person.County == searchString
                          select person;
+
             return result.ToList();
         }
         public List<Person> PersonWhoseHouseNoIsThreeDigit(List<Person> personList)

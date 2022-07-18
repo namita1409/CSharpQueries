@@ -75,9 +75,8 @@ static void displayPerson(List<Person> person)
 {
     Console.WriteLine($"Count { person.Count }");
     foreach (var p in person)
-    {
-        int index = person.IndexOf(p);
-        Console.WriteLine($"{ index + 1 } { p.FirstName } { p.LastName }{ p.Company }"); ;
+    {        
+        Console.WriteLine($"{ p.Index } { p.FirstName } { p.LastName }{ p.Company }"); ;
     }
 }
 

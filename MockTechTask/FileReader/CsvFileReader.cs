@@ -16,11 +16,12 @@ namespace MockTechTask.FileReader
                 var data = CsvParser.ParseHeadAndTail(reader, ',', '"');
                 var header = data.Item1;
                 var lines = data.Item2;
-
+                int rownum = 0;
                 foreach (var line in lines)
                 {
                     Person p = new Person();
                     int i = 0;
+                    p.Index = ++rownum;
                     p.FirstName = line[0];
                     p.LastName = line[i + 1];
                     p.Company = line[i + 2];

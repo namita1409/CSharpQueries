@@ -25,6 +25,7 @@ namespace MockTechTaskTest
             {
                  new Person
                  {
+                    Index = 1,
                     FirstName = "Eric",
                     LastName="Rampy",
                     Company="Michael C Esq",
@@ -50,6 +51,7 @@ namespace MockTechTaskTest
             {
                  new Person
                  {
+                    Index = 1,
                     FirstName = "Eric",
                     LastName="Rampy",
                     Company="Michael C Esq",
@@ -73,19 +75,20 @@ namespace MockTechTaskTest
             var expectedResult = new List<Person>()
             {
                  new Person
-                {
-                    FirstName = "Yuette",
-                    LastName="Klapec",
-                    Company="Max Video",
-                    Address="45 Bradfield St #166 St",
-                    City = "Parwich",
-                    County = "Derbyshire",
-                    Postal = "DE6 1QN",
-                    Phone1 = "01903-649460",
-                    Phone2 = "01933-512513",
-                    Email = "yuette.klapec@klapec.co.uk",
-                    Web = "http://www.maxvideo.co.uk"
-                }
+                 {
+                        Index = 2,
+                        FirstName = "Yuette",
+                        LastName="Klapec",
+                        Company="Max Video",
+                        Address="45 Bradfield St #166 St",
+                        City = "Parwich",
+                        County = "Derbyshire",
+                        Postal = "DE6 1QN",
+                        Phone1 = "01903-649460",
+                        Phone2 = "01933-512513",
+                        Email = "yuette.klapec@klapec.co.uk",
+                        Web = "http://www.maxvideo.co.uk"
+                 }
             };
             var result = Query.PersonLivingInCountyDerbyshire(person, searchString);          
             result.Should().BeEquivalentTo(expectedResult);
@@ -99,6 +102,7 @@ namespace MockTechTaskTest
             {
                  new Person
                  {
+                        Index = 1,
                         FirstName = "Eric",
                         LastName="Rampy",
                         Company="Michael C Esq",
@@ -124,6 +128,7 @@ namespace MockTechTaskTest
             {
                  new Person
                  {
+                    Index = 4,
                     FirstName = "Ulysses",
                     LastName="Mcwalters",
                     Company="Mcmahan, Ben L",
@@ -148,6 +153,7 @@ namespace MockTechTaskTest
             {
                  new Person
                  {
+                    Index = 3,
                     FirstName = "Charisse",
                     LastName="Spinello",
                     Company="Modern Plastics Corp",
@@ -162,6 +168,7 @@ namespace MockTechTaskTest
                  },
                 new Person
                 {
+                    Index = 1,
                     FirstName = "Eric",
                     LastName="Rampy",
                     Company="Michael C Esq",
@@ -186,6 +193,7 @@ namespace MockTechTaskTest
             {
                  new Person
                  {
+                    Index = 2,
                     FirstName = "Yuette",
                     LastName="Klapec",
                     Company="Max Video",
@@ -210,6 +218,7 @@ namespace MockTechTaskTest
             {
                   new Person
                   {
+                        Index = 1,
                         FirstName = "Eric",
                         LastName="Rampy",
                         Company="Michael C Esq",
@@ -224,6 +233,7 @@ namespace MockTechTaskTest
                   },
                   new Person
                   {
+                        Index = 3,
                         FirstName = "Charisse",
                         LastName="Spinello",
                         Company="Modern Plastics Corp",
@@ -238,6 +248,7 @@ namespace MockTechTaskTest
                   },
                    new Person
                    {
+                        Index = 4,
                         FirstName = "Ulysses",
                         LastName="Mcwalters",
                         Company="Mcmahan, Ben L",
@@ -251,7 +262,8 @@ namespace MockTechTaskTest
                         Web = "ttp://www.mcmahanbenl.co.uk"
                    },
                   new Person
-                  {   
+                  {
+                        Index = 5,
                         FirstName = "Eric Thompson",
                         LastName="Nobel",
                         Company="Victory Coating",
@@ -266,6 +278,7 @@ namespace MockTechTaskTest
                   },
                    new Person
                    {
+                        Index = 6,
                         FirstName = "Evan",
                         LastName="Zigomalas",
                         Company="Cap Gemini America",
@@ -288,6 +301,7 @@ namespace MockTechTaskTest
             {
                 new Person
                 {
+                    Index = 1,
                     FirstName = "Eric",
                     LastName="Rampy", 
                     Company="Michael C Esq",
@@ -302,6 +316,7 @@ namespace MockTechTaskTest
                 },
                 new Person
                 {
+                    Index = 2,
                     FirstName = "Yuette",
                     LastName="Klapec",
                     Company="Max Video",
@@ -316,20 +331,22 @@ namespace MockTechTaskTest
                 },
                  new Person
                  {
-                    FirstName = "Charisse",
-                    LastName="Spinello",
-                    Company="Modern Plastics Corp",
-                    Address="9165 Primrose St",
-                    City = "Darnall Ward",
-                    County = "Yorkshire,South",
-                    Postal = "S4 7WN",
-                    Phone1 = "01719-831436",
-                    Phone2 = "01207-428520",
-                    Email = "charisse_spinello@spinello.co.uk",
-                    Web = "http://www.alandrosenburgcpapc.co.uk"
+                        Index = 3,
+                        FirstName = "Charisse",
+                        LastName="Spinello",
+                        Company="Modern Plastics Corp",
+                        Address="9165 Primrose St",
+                        City = "Darnall Ward",
+                        County = "Yorkshire,South",
+                        Postal = "S4 7WN",
+                        Phone1 = "01719-831436",
+                        Phone2 = "01207-428520",
+                        Email = "charisse_spinello@spinello.co.uk",
+                        Web = "http://www.alandrosenburgcpapc.co.uk"
                  },
                  new Person
                  {
+                        Index = 4,
                         FirstName = "Ulysses",
                         LastName="Mcwalters",
                         Company="Mcmahan, Ben L",
@@ -344,6 +361,7 @@ namespace MockTechTaskTest
                  },
                   new Person
                   {
+                        Index = 5,
                         FirstName = "Eric Thompson",
                         LastName="Nobel",
                         Company="Victory Coating",
@@ -358,6 +376,7 @@ namespace MockTechTaskTest
                   },
                    new Person
                    {
+                        Index = 6,
                         FirstName = "Evan",
                         LastName="Zigomalas",
                         Company="Cap Gemini America",
