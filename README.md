@@ -72,7 +72,7 @@ C#, input.csv
 
 # Instructions
 
-`The machine running the application should have [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) (or above) installed.`
+The machine running the application should have [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) (or above) installed.
 
 Clone the repository to your computer.
 
